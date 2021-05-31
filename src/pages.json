@@ -1,16 +1,133 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
+        {
+            "path": "pages/tabBar/page1/index",
+            "style": {
+                "navigationBarTitleText": "内置组件",
+                "app-plus": {
+                    "bounce": "vertical",
+                    "titleNView": {
+                        "buttons": [
+                            {
+                                "text": "\ue534",
+                                "fontSrc": "/static/uni.ttf",
+                                "fontSize": "22px",
+                                "color": "#FFFFFF"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "path": "pages/tabBar/page2/index",
+            "style": {
+                "navigationBarTitleText": "接口",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [
+                            {
+                                "text": "\ue534",
+                                "fontSrc": "/static/uni.ttf",
+                                "fontSize": "22px",
+                                "color": "#FFFFFF"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "path": "pages/tabBar/page3/index",
+            "style": {
+                "navigationBarTitleText": "模版",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [
+                            {
+                                "text": "\ue534",
+                                "fontSrc": "/static/uni.ttf",
+                                "fontSize": "22px",
+                                "color": "#FFFFFF"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "path": "pages/tabBar/page4/index",
+            "style": {
+                "navigationBarTitleText": "扩展组件",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [
+                            {
+                                "text": "\ue534",
+                                "fontSrc": "/static/uni.ttf",
+                                "fontSize": "22px",
+                                "color": "#FFFFFF"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
 		}
 	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+    "globalStyle": {
+        "pageOrientation": "portrait",
+        "navigationBarTitleText": "Hello uniapp",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#007AFF",
+        "backgroundColor": "#F8F8F8",
+        "backgroundColorTop": "#F4F5F6",
+        "backgroundColorBottom": "#F4F5F6",
+        "mp-360": {
+            "navigationStyle": "custom"
+        },
+        "h5": {
+            "maxWidth": 1190,
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#F1F1F1"
+        }
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#007AFF",
+        "borderStyle": "black",
+        "backgroundColor": "#F8F8F8",
+        "list": [
+            {
+                "pagePath": "pages/tabBar/page1/index",
+                "iconPath": "static/logo.png",
+                "selectedIconPath": "static/logo.png",
+                "text": "内置组件"
+            },
+            {
+                "pagePath": "pages/tabBar/page2/index",
+                "iconPath": "static/logo.png",
+                "selectedIconPath": "static/logo.png",
+                "text": "接口"
+            },
+            {
+                "pagePath": "pages/tabBar/page3/index",
+                "iconPath": "static/logo.png",
+                "selectedIconPath": "static/logo.png",
+                "text": "扩展组件"
+            },
+            {
+                "pagePath": "pages/tabBar/page4/index",
+                "iconPath": "static/logo.png",
+                "selectedIconPath": "static/logo.png",
+                "text": "模板"
+            }
+        ]
+    }
 }
